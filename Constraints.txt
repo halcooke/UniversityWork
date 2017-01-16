@@ -1,0 +1,22 @@
+Identified Constraints
+
+Tables
+Child
+- Primary key cid
+- varchar(50) name 
+- varchar(20) address
+ - The address data used here will be post codes
+SantasLittleHelper
+- Primary key slhid
+- varchar(50) name
+Gift 
+- Primary key gid
+- varchar(50) Description
+Present
+- All 3 columns are foreign keys
+
+- Children should not have duplicate presents
+- Helpers should deliver a realistic ammount of presents, in this case I have decided on 15 per helper
+- All entries in every table should be not null
+- The Primary keys in each should be SERIAL to increase consistency
+
